@@ -1,49 +1,79 @@
-<!--h1>Raccie GH Pages Test</h1-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paul Babencu</title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body>
+    <div id="menu-button">
+      <img src="static/images/menu-icon.svg"/>
+    </div>
+    <div id="menu">
+      <ul>
+        <li><a class="menulink" href="index.html">Home</a></li>
+        <li><a class="menulink" href="test1.html">Test1</a></li>
+      </ul>
+    </div>
+    <div class="fixed-bg"></div>
+    <div class="floatingtext"><p>welcome</p></div>
+    <div id="textcontainer">
+      <div>
+        <h1>Fuck you</h1>
+        <b>Fuck</b>
+        <p>
+        Sint recusandae assumenda non ut optio non laboriosam et. Ratione amet doloribus sequi dolor pariatur vel tenetur. Et ex ab et eum. Incidunt rerum sit ullam assumenda nesciunt. Fuga possimus deleniti sed aut accusantium non id at.
+        Molestiae omnis cum in possimus cum voluptatem. A eos sequi quod. Aperiam itaque rem eveniet voluptatem sint cupiditate ut nemo. Suscipit ea ut sequi odit sapiente vitae. Delectus explicabo illum ut eligendi.
+        Consequatur vel illum eaque soluta earum. Sit laborum quasi ex voluptatem est. Odit iste et tempora dignissimos illum.
+        Provident mollitia commodi suscipit accusamus rerum dolor. Omnis quia quia facilis sit ea beatae. Voluptatem eos culpa in. Facilis in quas inventore aliquid non doloremque nam.
+        Rerum laboriosam nostrum sit. Architecto ut et illum accusantium sequi non officiis accusamus. Dolore nostrum maxime veniam cumque fuga voluptatem suscipit. Natus earum explicabo voluptatum nisi.
+        Sint recusandae assumenda non ut optio non laboriosam et. Ratione amet doloribus sequi dolor pariatur vel tenetur. Et ex ab et eum. Incidunt rerum sit ullam assumenda nesciunt. Fuga possimus deleniti sed aut accusantium non id at.
+        Molestiae omnis cum in possimus cum voluptatem. A eos sequi quod. Aperiam itaque rem eveniet voluptatem sint cupiditate ut nemo. Suscipit ea ut sequi odit sapiente vitae. Delectus explicabo illum ut eligendi.
+        Consequatur vel illum eaque soluta earum. Sit laborum quasi ex voluptatem est. Odit iste et tempora dignissimos illum.
+        Provident mollitia commodi suscipit accusamus rerum dolor. Omnis quia quia facilis sit ea beatae. Voluptatem eos culpa in. Facilis in quas inventore aliquid non doloremque nam.
+        Rerum laboriosam nostrum sit. Architecto ut et illum accusantium sequi non officiis accusamus. Dolore nostrum maxime veniam cumque fuga voluptatem suscipit. Natus earum explicabo voluptatum nisi.
+        Sint recusandae assumenda non ut optio non laboriosam et. Ratione amet doloribus sequi dolor pariatur vel tenetur. Et ex ab et eum. Incidunt rerum sit ullam assumenda nesciunt. Fuga possimus deleniti sed aut accusantium non id at.
+        Molestiae omnis cum in possimus cum voluptatem. A eos sequi quod. Aperiam itaque rem eveniet voluptatem sint cupiditate ut nemo. Suscipit ea ut sequi odit sapiente vitae. Delectus explicabo illum ut eligendi.
+        Consequatur vel illum eaque soluta earum. Sit laborum quasi ex voluptatem est. Odit iste et tempora dignissimos illum.
+        Provident mollitia commodi suscipit accusamus rerum dolor. Omnis quia quia facilis sit ea beatae. Voluptatem eos culpa in. Facilis in quas inventore aliquid non doloremque nam.
+        Rerum laboriosam nostrum sit. Architecto ut et illum accusantium sequi non officiis accusamus. Dolore nostrum maxime veniam cumque fuga voluptatem suscipit. Natus earum explicabo voluptatum nisi.
+        Sint recusandae assumenda non ut optio non laboriosam et. Ratione amet doloribus sequi dolor pariatur vel tenetur. Et ex ab et eum. Incidunt rerum sit ullam assumenda nesciunt. Fuga possimus deleniti sed aut accusantium non id at.
+        Molestiae omnis cum in possimus cum voluptatem. A eos sequi quod. Aperiam itaque rem eveniet voluptatem sint cupiditate ut nemo. Suscipit ea ut sequi odit sapiente vitae. Delectus explicabo illum ut eligendi.
+        Consequatur vel illum eaque soluta earum. Sit laborum quasi ex voluptatem est. Odit iste et tempora dignissimos illum.
+        Provident mollitia commodi suscipit accusamus rerum dolor. Omnis quia quia facilis sit ea beatae. Voluptatem eos culpa in. Facilis in quas inventore aliquid non doloremque nam.
+        Rerum laboriosam nostrum sit. Architecto ut et illum accusantium sequi non officiis accusamus. Dolore nostrum maxime veniam cumque fuga voluptatem suscipit. Natus earum explicabo voluptatum nisi.
+        </p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script>
+      let toggleDisplay = function(id) {
+        current_display = document.getElementById(id).className;
+        is_invisible = current_display == 'none' || current_display == ''
+        //document.getElementById(id).style.display = is_invisible ? 'inherit' : 'none';
+        document.getElementById(id).className = is_invisible ? 'display' : '';
+      }
+      
+      document.getElementById("menu-button").onclick = function() {
+        //current_display = document.getElementById("menu").style.display;
+        //document.getElementById("menu").style.display = current_display == 'none' || current_display == '' ? 'inherit' : 'none';
+        toggleDisplay('menu')
+      }
 
-<div id="bg" class="focuspoint">
-  <img class="bg-image" src="images/index-bg.jpg"></img>
-</div>
+      // window.scrollTo(0, 0)
 
-<style>
-  *, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+      // document.onscroll = function() {
+      //   // make text content appear
 
-  { margin: 0; padding: 0; }
+      //   // disable onscroll event
+      //   document.onscroll = null
+      //   toggleDisplay('textcontainer')
+      // }
+    </script>
+  </body>
 
-  #bg {
-    top: 0px;
-    left: 0px;
-    /*position: fixed;*/
-  }
-
-  .focuspoint {
-    height: 100%;
-    width: 100%;
-  }
-
-  #bg img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .bg-image {
-    position: absolute;
-    visibility: visible;
-    max-width: 100%;
-    position: abolute;
-    display: block;
-
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 0;
-    object-fit: cover;
-  }
-
-  img {
-    border: none;
-  }
-</style>
+  <style>
+  </style>
+</html>
