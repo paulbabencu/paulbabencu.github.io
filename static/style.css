@@ -113,7 +113,7 @@ div.imagecontainer > a > img {
 #textcontainer div{
     margin: auto;
     margin-top: 10em;
-    max-width: 40em;
+    max-width: 50%;
     text-align: center;
 }
 
