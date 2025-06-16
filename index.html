@@ -1,34 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Paul Babencu</title>
-    <link rel="stylesheet" href="static/style.css">
-    <style>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title id="pageTitle">Paul Babencu</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="./Photoswipe.css" />
+  <style>
       :root {
-        --background-image: url("images/Babencu_Paul_ABS-5.jpg")
-      }
-    </style>
-  </head>
-  <body>
+        --background-image: url("images/Babencu_Paul_ABS-5.jpg");
+      --main-color: #8a7461;
+    }
+
+    .pswp {
+      --pswp-icon-color: var(--main-color);
+    }
+
+    div.pswp-gallery > a > img {
+      border-color: var(--main-color);
+    }
+
+    .color-main-text,
+    .pswp__button {
+      color: var(--main-color);
+    }
+
+    #menu-button {
+      cursor: pointer;}
+
+    /* Language toggle styles */
+    .lang-text {
+      display: none;
+    }
+
+    .lang-en .en {
+      display: block;
+    }
+
+    .lang-ro .ro {
+      display: block;
+    }
+
+    #langToggle {
+      position: fixed;
+      top: 15px;
+      right: 100px;
+      background-color: rgba(0, 0, 0, 0);
+      color: var(--main-color);
+      border: none;
+      padding: 12px 12px;
+      cursor: pointer;
+      z-index: 1000;
+    
+      font-family: "Lexend Giga";
+      font-weight: 1000;
+      font-style: bold;
+    }
+  </style>
+</head>
+
+<body>
+
     <div id="menu-button">
-      <img src="static/images/menu-icon.svg"/>
-    </div>
-    <div id="menu">
-      <ul>
-        <li><a class="menulink" href="index.html">Home</a></li>
-        <li><a class="menulink" href="Halving.html">Halving</a></li>
-        <li><a class="menulink" href="Movement.html">Movement</a></li>
-        <li><a class="menulink" href="the_city.html">The City</a></li>
-        <li><a class="menulink" href="tissu_du_maman_et_enfants.html">Tissu du maman et enfants</a></li>
-        <li><a class="menulink" href="In_the_shadows.html">In the Shadows</a></li>
-        <li><a class="menulink" href="In_a_galaxy_far_to_close.html">In a galaxy far too close</a></li>
-      </ul>
-    </div>
+    <i class="bx bx-menu color-main-text"></i>
+  </div>
+
+  <div id="menu">
+    <ul>
+      <li><a class="menulink color-main-text" href="index.html">Home</a></li>
+      <li><a class="menulink color-main-text" href="Halving.html">Halving</a></li>
+      <li><a class="menulink color-main-text" href="Movement.html">Movement</a></li>
+      <li><a class="menulink color-main-text" href="the_city.html">The City</a></li>
+      <li><a class="menulink color-main-text" href="tissu_de_la_maman_et_des_enfants.html">Tissu de la maman et des enfants</a></li>
+      <li><a class="menulink color-main-text" href="In_the_shadows.html">In the Shadows</a></li>
+      <li><a class="menulink color-main-text" href="In_a_galaxy_far_to_close.html">In a galaxy far too close</a></li>
+      <li><a class="menulink color-main-text" href="Sehnsucht.html">Sehnsucht</a></li>
+    </ul>
+  </div>
+
     <div class="fixed-bg"></div>
-    <div class="floatingtext"><p>Paul Babencu</p></div>
+    <div class="floatingtext color-main-text"><p>Paul Babencu</p></div>
     <script src="static/index.js"></script>
+
   </body>
+
 </html>
