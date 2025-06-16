@@ -33,6 +33,15 @@ body, html {
     user-select: none;
 }
 
+#menu-button i {
+    max-width: 4em;
+    max-height: 4em;
+    margin: auto;
+    margin-right: .5em;
+    float: right;
+    font-size: 4em;
+}
+
 div.imagecontainer > a > img {
   max-height: 15em;
   border-color: white;
@@ -47,6 +56,14 @@ div.imagecontainer > a > img {
   -o-user-select: none;
   user-select: none;
 }
+
+div.pswp-gallery > a > img {
+    max-height: 15em;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+  }
+
 
 #menu {
     width: 100%;
